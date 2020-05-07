@@ -1,5 +1,6 @@
 import Vue from 'vue';
-const mycomp = Vue.component('my-comp', {
+
+const mycomp = Vue.extend( {
   render: function(h) {
     return h('div', {}, this.$slots.default);
   },
@@ -8,5 +9,7 @@ const mycomp = Vue.component('my-comp', {
   }
 });
 
-export { mycomp };
+export {
+  mycomp
+}
 
